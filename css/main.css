@@ -89,6 +89,11 @@ body {
   background-size: cover;
   font-weight: 400; }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
 /*------------------blocks----------------*/
 .nav {
   position: relative;
@@ -118,8 +123,10 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-right: 30px; }
-    .nav__buttons__item + .nav__buttons__item {
-      margin-left: 30px; }
+    .nav__buttons__item {
+      cursor: pointer; }
+      .nav__buttons__item + .nav__buttons__item {
+        margin-left: 30px; }
   .nav__phone {
     position: relative;
     font-family: "Raleway Black", sans-serif;
@@ -140,8 +147,23 @@ body {
     z-index: -1; }
   .nav .search__icon {
     position: relative; }
-  .nav .search__modal__open {
+  .nav .search__modal {
+    position: absolute;
+    top: 40px;
+    right: 0;
     display: none; }
+    .nav .search__modal img {
+      display: none; }
+    .nav .search__modal__open {
+      display: block; }
+  .nav .search__input {
+    padding: 20px;
+    width: 410px;
+    border-radius: 10px;
+    text-align: left;
+    box-sizing: border-box; }
+    .nav .search__input::placeholder {
+      opacity: 0.4; }
   .nav__image-text {
     position: absolute;
     right: 0;
@@ -153,3 +175,55 @@ body {
   cursor: pointer;
   text-align: center;
   text-decoration: none; }
+
+.header {
+  display: flex;
+  flex: 1 0 auto;
+  height: 1000px; }
+
+.footer {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  background-color: #92b759; }
+  .footer__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer__colum {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer__colum:first-child {
+      width: 60%; }
+    .footer__colum:last-child {
+      width: 40%; }
+  .footer__menu {
+    display: flex;
+    margin: 0 168px 0 75px;
+    width: 100%;
+    justify-content: space-between; }
+    .footer__menu__colum {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      flex-wrap: wrap; }
+    .footer__menu__item:not(:first-child) {
+      margin-top: 18px; }
+  .footer__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: start; }
+    .footer__icon img:not(:first-child) {
+      margin-top: 33px;
+      height: 32px; }
+  .footer__copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    white-space: nowrap; }

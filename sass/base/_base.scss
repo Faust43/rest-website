@@ -12,3 +12,8 @@ body {
   background-size: cover;
   font-weight: 400;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

@@ -29,9 +29,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     margin-right: 30px;
     &__item {
+      cursor: pointer;
       & + & {
         margin-left: 30px;
       }
@@ -63,11 +63,26 @@
       position: relative;
     }
     &__modal {
-      &__open {
+      position: absolute;
+      top: 40px;
+      right: 0;
+      display: none;
+      & img {
         display: none;
+      }
+      &__open {
+        display: block;
       }
     }
     &__input {
+      padding: 20px;
+      width: 410px;
+      border-radius: 10px;
+      text-align: left;
+      box-sizing: border-box;
+      &::placeholder {
+        opacity: 0.4;
+      }
     }
   }
   &__image-text {

@@ -1,0 +1,59 @@
+.footer {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  background-color: #92b759;
+  &__logo {
+  }
+  &__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__colum {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:first-child {
+      width: 60%;
+    }
+    &:last-child {
+      width: 40%;
+    }
+  }
+  &__menu {
+    display: flex;
+    margin: 0 168px 0 75px;
+    width: 100%;
+    justify-content: space-between;
+    &__colum {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    &__item:not(:first-child) {
+      margin-top: 18px;
+    }
+  }
+  &__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    & img:not(:first-child) {
+      margin-top: 33px;
+      height: 32px;
+    }
+  }
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    white-space: nowrap;
+  }
+}

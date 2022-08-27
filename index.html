@@ -17,41 +17,89 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="nav container">
-      <div class="nav__logo">
-        <img src="./img/nav/logo.svg" alt="logo" />
-      </div>
-      <div class="nav__inner">
-        <div class="nav__menu menu">
-          <a href="#" class="menu__item">меню</a>
-          <a href="#" class="menu__item">рестораны</a>
-          <a href="#" class="menu__item">контакты</a>
-          <a href="#" class="menu__item">вакансии</a>
+    <div class="wrapper">
+      <nav class="nav container">
+        <div class="nav__logo">
+          <img src="./img/nav/logo.svg" alt="logo" />
         </div>
-        <div class="nav__phone">
-          <a href="tel:+78124907464">490-74-64</a>
-        </div>
-        <div class="nav__buttons">
-          <div class="nav__buttons__item search__icon">
-            <div class="search__modal search__modal__open">
-              <form>
-                <input type="text" class="search__input input" />
-                <img src="" alt="search-icon-green" />
-              </form>
+        <div class="nav__inner">
+          <div class="nav__menu menu">
+            <a href="#" class="menu__item">меню</a>
+            <a href="#" class="menu__item">рестораны</a>
+            <a href="#" class="menu__item">контакты</a>
+            <a href="#" class="menu__item">вакансии</a>
+          </div>
+          <div class="nav__phone">
+            <a href="tel:+78124907464">490-74-64</a>
+          </div>
+          <div class="nav__buttons">
+            <div class="nav__buttons__item search__icon">
+              <div class="search__modal search__modal__open">
+                <form>
+                  <input
+                    type="text"
+                    class="search__input input"
+                    placeholder="Поиск"
+                  />
+                  <img
+                    src="./img/nav/search_green.svg"
+                    alt="search-icon-green"
+                  />
+                </form>
+              </div>
+              <img src="./img/nav/search_white.svg" alt="search-icon-white" />
             </div>
-            <img src="./img/nav/search_white.svg" alt="search-icon-white" />
+            <div class="nav__buttons__item">
+              <img src="./img/nav/user.svg" alt="user" />
+            </div>
+            <div class="nav__buttons__item cart-counter">
+              <img src="./img/nav/cart.svg" alt="text-img" />
+            </div>
           </div>
-          <div class="nav__buttons__item">
-            <img src="./img/nav/user.svg" alt="user" />
+          <div class="nav__image-text">
+            <img src="./img/nav/text.svg" alt="text" />
           </div>
-          <div class="nav__buttons__item cart-counter"></div>
-          <img src="./img/nav/cart.svg" alt="text-img" />
         </div>
-        <div class="nav__image-text">
-          <img src="./img/nav/text.svg" alt="text" />
+      </nav>
+      <header class="header container"></header>
+      <footer class="footer">
+        <div class="footer__row">
+          <div class="footer__colum">
+            <img
+              class="footer__logo"
+              src="./img/footer/logo-white.svg"
+              alt="footer-logo"
+            />
+            <div class="footer__menu">
+              <div class="footer__menu__colum">
+                <a href="#" class="footer__menu__item">меню</a>
+                <a href="#" class="footer__menu__item">рестораны</a>
+                <a href="#" class="footer__menu__item">контакты</a>
+              </div>
+              <div class="footer__menu__colum">
+                <a href="#" class="footer__menu__item">вакансии</a>
+                <a href="#" class="footer__menu__item">предзаказ и оплата</a>
+                <a href="#" class="footer__menu__item"
+                  >политика конфиденциальности</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="footer__colum">
+            <div class="footer__icon">
+              <img src="./img/footer/card.png" alt="card" />
+              <img src="./img/footer/vk.svg" alt="vk" />
+            </div>
+            <div class="footer__copyright">
+              <div class="copyright">© Кореана light</div>
+              <div class="disign">
+                <img src="/img/footer/madvarejka.svg" alt="disigner" />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </footer>
+    </div>
     <script src="./js/main.js"></script>
   </body>
 </html>
